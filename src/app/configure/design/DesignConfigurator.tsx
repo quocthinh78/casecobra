@@ -193,6 +193,7 @@ const DesignConfigurator = ({
             setRenderedPosition({ x, y })
           }}
           onDragStop={(_, data) => {
+            console.log("🚀 ~ data:", data)
             const { x, y } = data
             setRenderedPosition({ x, y })
           }}
