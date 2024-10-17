@@ -56,6 +56,8 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
   })
 
   const handleCheckout = () => {
+    console.log('Checkout')
+    console.log(user)
     if (user) {
       // create payment session
       createPaymentSession({ configId: id })
